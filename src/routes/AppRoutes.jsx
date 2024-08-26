@@ -12,6 +12,7 @@ import Layout from '../components/layout/Layout'
 
 export default function AppRoutes() {
     console.log("approutes");
+    
     return (
         <Router>
             <Routes>               
