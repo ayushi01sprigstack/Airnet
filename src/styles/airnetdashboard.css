@@ -1,0 +1,64 @@
+.chartWrapper{
+    background:white;
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px 0px #1018281A;
+}
+.chartHeader{
+    color:#7C7A81;
+    font-weight: 400;
+}
+.activity{
+    font-size: 12px;
+    color:#9291A5;
+}
+.incomePercent{
+    color:#05DFAD;
+    border-radius: 3px;
+    padding: 2px 5px 2px 5px;
+    background-color: #F0FDFA;
+}
+.totalIncomeList li::marker {
+    color:#C6D2FD;  
+}
+.transactionTabs .nav-tabs {
+    border-bottom: none; 
+}
+.transactionTabs .nav-tabs .nav-link{
+    color:#27232F;
+    background-color: #F0F7FF;
+    font-size: 12px;
+}
+.table td,th{
+    font-size: 13px;
+}
+.moneyActivity{
+    position: absolute;
+    top: -70%;
+    left: 26%
+}
+.salesWrapper{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.clientWrapper{
+    background-color: #F5FAFF;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px 0px #1018281A;
+}
+.slider {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+.slide img {
+    animation: slide 8s linear infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,14 @@
+import React from 'react'
+
+export default function EfficientAnalytics() {
+  return (
+    <div>
+      <div className="row px-5 py-5 text-white ">
+      <span className='' style={{fontSize:'16px'}}>Business simplified</span>
+      <h1 className='mt-2'>Efficient Analytics Coherence</h1>
+      <br />
+      <h1 className='d-flex align-items-center mt-2'><button className='getStarted' style={{color:'black', background:'white'}}>Get started</button>&nbsp;and Company Integrations</h1>
+      </div>
+    </div>
+  )
+}
