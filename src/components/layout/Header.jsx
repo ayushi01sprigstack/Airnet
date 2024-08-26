@@ -15,7 +15,7 @@ export default function Header() {
     return (
         <div className='airnetdashboard sticky-top'>
             <div className='row px-5 py-3'>
-                <div className="col-md-2 d-flex align-items-center cursor-pointer" onClick={() => navigate('/')}>
+                <div className="col-md-2 d-flex align-items-center cursor-pointer" onClick={() => navigate('/dashboard')}>
                     <img src={IMAGES.airnetLogo} alt="logo" style={{ height: '30px' }} className='' />
                     <h3 className='text-white ps-2 fs-4 fw-bold'>AirNet</h3>
                 </div>

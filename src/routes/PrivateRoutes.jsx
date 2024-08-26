@@ -7,5 +7,5 @@ import Login from '../pages/Login/Login';
 export default function PrivateRoutes() {
     const isAuthenticated  = localStorage.getItem('isLogin');
    
-    return isAuthenticated == 1 ? <Outlet /> : <Login/>;
+    return isAuthenticated ? <Outlet /> : <Login/>;
 }
