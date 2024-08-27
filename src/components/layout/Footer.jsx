@@ -1,7 +1,9 @@
 import React from 'react'
 import IMAGES from '../../utils/Images';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <div className='row px-5 mt-auto'>
       <div className="col-2 d-flex align-items-center">
@@ -11,17 +13,20 @@ export default function Footer() {
       <div className="col-8 d-flex justify-content-center">
         <nav className="navbar navbar-expand-lg">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link text-black" aria-current="page" href="/feature">Feature</a>
+          <li className="nav-item">
+              <a className="nav-link text-black cursor-pointer" aria-current="page" onClick={() => navigate("/dashboard")}>Dashboard</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-black" href="/blog">Blog</a>
+              <a className="nav-link text-black cursor-pointer" aria-current="page" onClick={() => navigate("/feature")}>Feature</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-black" href="/aboutus">About Us</a>
+              <a className="nav-link text-black cursor-pointer" onClick={() => navigate("/blog")}>Blog</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-black" href="/contactus">Contact Us</a>
+              <a className="nav-link text-black cursor-pointer" onClick={() => navigate("/aboutus")}>About Us</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-black cursor-pointer" onClick={() => navigate("/contactus")}>Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -34,7 +39,7 @@ export default function Footer() {
       </div>
       <hr className='mt-4'/>
       <ul className='list-unstyled d-flex justify-content-center mt-1'>
-        <li className='cursor-pointer mx-2'>© 2023 AirNet All rights reserved.</li>
+        <li className='mx-2'>© 2023 AirNet All rights reserved.</li>
         <li className='cursor-pointer mx-2'>Privacy Policy</li>
         <li className='cursor-pointer mx-2'>Terms and Conditions</li>
         <li className='cursor-pointer mx-2'>Cookie Policy</li>

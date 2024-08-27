@@ -51,8 +51,8 @@
     gap: 3em;
     overflow: hidden;
 }
-.slide img {
-    animation: slide 8s linear infinite;
+.sliderWrapper .slide img {
+    animation: slide 6s linear infinite;
 }
 @keyframes slide {
     0%{

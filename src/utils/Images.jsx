@@ -19,6 +19,9 @@ const IMAGES = {
     instagram: new URL('../assets/images/footer/instagram.svg', import.meta.url).href,
     linkedin : new URL('../assets/images/footer/linkedin.svg', import.meta.url).href,
     youtube: new URL('../assets/images/footer/youtube.svg', import.meta.url).href,
+    shoper: new URL('../assets/images/feature/shoper.jpg', import.meta.url).href,
+    mobileApp : new URL('../assets/images/feature/mobile-app.jpg', import.meta.url).href,
+    analytics : new URL('../assets/images/feature/analytics.jpg', import.meta.url).href,
 }
 
 export default IMAGES

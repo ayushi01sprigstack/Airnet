@@ -1,4 +1,3 @@
-
 import AppRoutes from './routes/AppRoutes.jsx';
 import AuthProvider from './context/AuthContext.jsx';
 
