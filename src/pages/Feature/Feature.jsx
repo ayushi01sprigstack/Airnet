@@ -9,7 +9,7 @@ export default function Feature() {
       <Carousel controls={false} indicators={true} interval={3000}>
         {images.map((image, index) => (
           <Carousel.Item key={index}>
-            <img src={image} className="w-100" alt={`Slide ${index + 1}`} style={{height:'75vh'}}/>
+            <img src={image} className="w-100" alt={`Slide ${index + 1}`} style={{height:'70vh'}}/>
           </Carousel.Item>
         ))}
       </Carousel>

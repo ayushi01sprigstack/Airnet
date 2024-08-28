@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import IMAGES from '../../utils/Images';
+import '../../styles/airnetdashboard.css'
 
 export default function Blog() {
   const blogs = [
@@ -37,8 +38,7 @@ export default function Blog() {
   }
  
   return (
-    <div>
-      <h1 className='text-center text-black py-3'>Blogs</h1>
+    <div className='p-5' style={{height:'70vh', background:'azure'}}>
       <div className="row">
         <div className='col-md-4 offset-md-4 border border-secondary rounded-3 bg-dark p-3'>
           <div className='d-flex align-items-center'>
@@ -51,8 +51,8 @@ export default function Blog() {
           <label className='text-white mt-3 p-2'>{currentBlog.quote}</label>
         </div>
         <div className='col-md-6 offset-md-3 mt-3 p-2 d-flex justify-content-around align-items-center'>
-          <button className='rounded-3 border-0 p-2 btn btn-info text-white' onClick={handlePreviousClick} disabled={currentIndex == 0}>Previous</button>
-          <button className='rounded-3 border-0 py-2 px-3 btn btn-info text-white' onClick={handleNextClick} disabled={currentIndex == blogs.length-1}>Next</button>
+          <button className='p-2 btn btn-info text-white animatedBtn' onClick={handlePreviousClick} disabled={currentIndex == 0}>Previous</button>
+          <button className='py-2 px-3 btn btn-info text-white animatedBtn' onClick={handleNextClick} disabled={currentIndex == blogs.length-1}>Next</button>
         </div>
       </div>
     </div>
