@@ -64,13 +64,14 @@
 }
 .animatedBtn {
     transition: all 0.5s ease-in-out;
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     background: linear-gradient(90deg, #007BFF, #05DFAD);
-    color: white;
+    font-weight: 500;
+    color:white !important;
 }  
 .animatedBtn:hover {
     transform: scale(1.1);
-    background: linear-gradient(90deg, #007bff, #05DFAD); 
+    background: linear-gradient(90deg, #007bff, #05DFAD);
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
 }

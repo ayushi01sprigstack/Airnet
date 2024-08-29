@@ -100,7 +100,7 @@ export default function Transaction() {
                 </div>
             </div>
            <div className='py-4'>
-           <h2 className='text-white fs-2 p-2'>Dependable and <br /> <img src={IMAGES.circle} alt="circle" className='me-2 py-3'/>Reputable</h2>
+           <h2 className='text-black fs-2 p-2'>Dependable and <br /> <img src={IMAGES.circle} alt="circle" className='me-2 py-3'/>Reputable</h2>
            </div>
            <div>
            <HappyCustomer/>

@@ -10,7 +10,7 @@ import '../../styles/airnetdashboard.css'
 export default function AirnetDashboard() {
   return (
     <>
-    <div className='airnetdashboard'>
+    <div className='contentBackground'>
       <EfficientAnalytics/>
       <div className='row px-5 py-3'>
         <IncomeAnalysis/>

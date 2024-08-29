@@ -4,7 +4,6 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import Login from '../pages/Login/Login';
 
 export default function PrivateRoutes() {
-    const isAuthenticated  = localStorage.getItem('isLogin');
-   
+    const isAuthenticated  = localStorage.getItem('isLogin');   
     return isAuthenticated ? <Outlet /> : <Login/>;
 }

@@ -38,8 +38,9 @@ export default function Blog() {
   }
  
   return (
-    <div className='p-5' style={{height:'70vh', background:'azure'}}>
-      <div className="row">
+    <div className='contentBackground p-2' style={{height:'70vh'}}>
+      <h2 className='text-black text-center'>Blog</h2>
+      <div className="row mt-3">
         <div className='col-md-4 offset-md-4 border border-secondary rounded-3 bg-dark p-3'>
           <div className='d-flex align-items-center'>
             <img src={currentBlog.profile} alt="profile1" style={{ height: "50px" }} />
@@ -51,8 +52,8 @@ export default function Blog() {
           <label className='text-white mt-3 p-2'>{currentBlog.quote}</label>
         </div>
         <div className='col-md-6 offset-md-3 mt-3 p-2 d-flex justify-content-around align-items-center'>
-          <button className='p-2 btn btn-info text-white animatedBtn' onClick={handlePreviousClick} disabled={currentIndex == 0}>Previous</button>
-          <button className='py-2 px-3 btn btn-info text-white animatedBtn' onClick={handleNextClick} disabled={currentIndex == blogs.length-1}>Next</button>
+          <button className='p-2 btn btn-info animatedBtn' onClick={handlePreviousClick} disabled={currentIndex == 0}>Previous</button>
+          <button className='py-2 px-3 btn btn-info animatedBtn' onClick={handleNextClick} disabled={currentIndex == blogs.length-1}>Next</button>
         </div>
       </div>
     </div>

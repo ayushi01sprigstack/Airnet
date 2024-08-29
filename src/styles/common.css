@@ -1,6 +1,9 @@
 .airnetdashboard{
     background: linear-gradient(to right, #007BFF, #05DFAD);;
 }
+.contentBackground{
+    background:#d9cccc;
+}
 .getStarted{
     border-radius: 32px;
     color: white;
@@ -11,4 +14,9 @@
 }
 .cursor-pointer {
     cursor: pointer;
+}
+.errorText{
+    font-size: 14px;
+    position: absolute;
+    left: 0;
 }
